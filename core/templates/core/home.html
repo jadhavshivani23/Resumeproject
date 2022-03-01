@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="mt-5">
+    <div class="text-center">
+    <img src="{% static 'core/images/pic1.jpg' %}" alt="profilepic" 
+    class="img-thumbnail" width="200px" height="150px"></div>
+<div class="mt-5 text-white mx-5 text-justify">
+<h1 class="font-weight-bold st-font">Hello,</h1>
+<div class="px-4" style="line-height:2rem;">
+    <p style="text-indent: 100px;"> I am <b
+    class="text-warning">Shivani Jadhav</b> having 4.2 years of
+    experience in non-technical field.I have completed my
+    bacheloer of engineering in electronics and telecommunications
+    from Pune university with distinction.
+    I was previously working in <b class="text-warning">WNS Global Services Private LTD </b>as 
+    a senior associate.
+    <p>I was doing document verification using client database in which we verify various documents like Passport, Visa,
+    Driving license and all supported documents and do fraud assessment and for doing fraud assessment we
+    check fonts, security features and digital tampering of particular document.</p>
+    <p>
+        Goal oriented, determined and focused with a keen eye for details. 
+        Skilled in various programming languages including Python and SQL.
+    </p>
+    </p>
+</div>
+</div>
+<div class="text-center">
+<a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+<a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+</div>
+</div> 
+
+{% endblock content %}
